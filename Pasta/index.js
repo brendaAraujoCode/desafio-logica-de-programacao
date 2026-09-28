@@ -23,42 +23,43 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**" */
 
 let nomeHeroi = "Arthur";
-let xpHeroi = 1000;
-const msgHeroi = " O herói de nome "
+let xpHeroi = 7500;
+const msgHeroi = " O herói de nome ";
+const msgnivel = " está no nível de ";
+const nivelHeroi = ["Ferro", "Bronze", "Prata", "Ouro", "Platina", "Ascendente", "Imortal", "Radiante"];
 
-switch (xpHeroi)
+switch (true)
 {
     case (xpHeroi <= 1000):
-    console.log(msgHeroi + nomeHeroi + " está no nível de Ferro");
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[0]);
     break;
 
-    case (xpHeroi >= 1001, xpHeroi <= 2000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Bronze");
+    case (xpHeroi >= 1001 && xpHeroi <= 2000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[1]);
     break;
 
-    case (xpHeroi >= 2001, xpHeroi <= 5000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Prata");
+    case (xpHeroi >= 2001 && xpHeroi <= 5000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[2]);
     break;
 
-    case (xpHeroi >= 5001, xpHeroi <= 7000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Ouro");
+    case (xpHeroi >= 5001 && xpHeroi <= 7000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[3]);
     break;
 
-    case (xpHeroi >= 7001, xpHeroi <= 8000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Platina");
+    case (xpHeroi >= 7001 && xpHeroi <= 8000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[4]);
     break;
 
-    case (xpHeroi >= 8001, xpHeroi <= 9000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Platina");
+    case (xpHeroi >= 8001 && xpHeroi <= 9000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[5]);
     break;
 
-    case (xpHeroi >= 9001, xpHeroi <= 10000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Imortal");
+    case (xpHeroi >= 9001 && xpHeroi <= 10000):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[6]);
     break;
 
-    case (xpHeroi > 10000):
-    console.log(" O herói de nome " + nomeHeroi + " está no nível de Radiante");
+    case (xpHeroi >= 10001):
+    console.log(msgHeroi + nomeHeroi + msgnivel + nivelHeroi[7]);
     break;
-
 }
 
